@@ -1,10 +1,7 @@
-
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:laza/core/theming/color/my_color.dart';
-import 'package:laza/core/widgets/cutom_text.dart';
+import 'package:laza/core/widgets/custom_text.dart';
 import 'package:laza/generated/assets.dart';
 
 class NewArrivalWidget extends StatelessWidget {
@@ -18,14 +15,24 @@ class NewArrivalWidget extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Column(
         children: [
-           const Row(
+          const Row(
             children: [
-              CustomText(text: 'New Arrival', fontSize: 17, fontWeight: FontWeight.bold,),
+              CustomText(
+                text: 'New Arrival',
+                fontSize: 17,
+                fontWeight: FontWeight.bold,
+              ),
               Spacer(),
-              CustomText(text: 'View All', fontSize: 13,color: Colors.grey,),
+              CustomText(
+                text: 'View All',
+                fontSize: 13,
+                color: Colors.grey,
+              ),
             ],
           ),
-          const SizedBox(height: 14,),
+          const SizedBox(
+            height: 14,
+          ),
           ConstrainedBox(
             constraints: const BoxConstraints(
               minHeight: 35.0,
@@ -40,7 +47,6 @@ class NewArrivalWidget extends StatelessWidget {
                 mainAxisSpacing: 18, // spacing between rows
                 crossAxisSpacing: 8.0, // spacing between columns
               ),
-
               itemCount: 8,
               itemBuilder: (context, index) {
                 return Column(
@@ -56,18 +62,35 @@ class NewArrivalWidget extends StatelessWidget {
                               ),
                               child: ClipRRect(
                                   borderRadius: BorderRadius.circular(10.0),
-                                  child: const Image(image: AssetImage('assets/images/model.jpg'),fit:BoxFit.cover,width: double.infinity,))
-                          ),
+                                  child: const Image(
+                                    image:
+                                        AssetImage('assets/images/model.jpg'),
+                                    fit: BoxFit.cover,
+                                    width: double.infinity,
+                                  ))),
                           Positioned(
-                            top: 14,
-                              right: 14,
-                              child: SvgPicture.asset(Assets.heartIcon)),
+                              top: 10,
+                              right: 10,
+                              child: CircleAvatar(
+                                radius: 16,
+                                  backgroundColor: MyColor.grey,
+                                  child: SvgPicture.asset(Assets.heartIcon))),
                         ],
                       ),
                     ),
-                    const SizedBox(height: 8,),
-                    const Text('brand name ',overflow: TextOverflow.ellipsis,maxLines: 2,),
-                    const Text('\$99.9',overflow: TextOverflow.ellipsis,maxLines: 1,),
+                    const SizedBox(
+                      height: 8,
+                    ),
+                    const Text(
+                      'brand name ',
+                      overflow: TextOverflow.ellipsis,
+                      maxLines: 2,
+                    ),
+                    const Text(
+                      '\$99.9',
+                      overflow: TextOverflow.ellipsis,
+                      maxLines: 1,
+                    ),
                   ],
                 );
               },

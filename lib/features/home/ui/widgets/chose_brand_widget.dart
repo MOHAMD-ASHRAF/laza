@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:laza/core/theming/color/my_color.dart';
-import 'package:laza/core/widgets/cutom_text.dart';
+import 'package:laza/core/widgets/custom_text.dart';
 import 'package:laza/features/home/data/models/brands_model.dart';
 
 class ChooseBrandWidget extends StatefulWidget {
