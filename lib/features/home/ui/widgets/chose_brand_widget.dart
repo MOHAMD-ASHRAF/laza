@@ -1,12 +1,13 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:laza/core/theming/color/my_color.dart';
 import 'package:laza/core/widgets/cutom_text.dart';
 import 'package:laza/features/home/data/models/brands_model.dart';
 
 class ChooseBrandWidget extends StatefulWidget {
-   ChooseBrandWidget({
+   const ChooseBrandWidget({
     super.key,
   });
 
@@ -45,12 +46,15 @@ class _ChooseBrandWidgetState extends State<ChooseBrandWidget> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Row(
-          children: [
-            CustomText(text: 'Choose Brand', fontSize: 17, fontWeight: FontWeight.bold,),
-            Spacer(),
-            CustomText(text: 'View All', fontSize: 13,color: Colors.grey,),
-          ],
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: const Row(
+            children: [
+              CustomText(text: 'Choose Brand', fontSize: 17, fontWeight: FontWeight.bold,),
+              Spacer(),
+              CustomText(text: 'View All', fontSize: 13,color: Colors.grey,),
+            ],
+          ),
         ),
         const SizedBox(height: 18,),
         ConstrainedBox(
@@ -66,7 +70,7 @@ class _ChooseBrandWidgetState extends State<ChooseBrandWidget> {
               return ListViewItem(dummyData: dummyData, index: index,);
             }, separatorBuilder: (BuildContext context, int index) {
             return
-              const SizedBox(width: 8,);
+               SizedBox(width: 8.w,);
           },),
         )
       ],
@@ -87,7 +91,7 @@ class ListViewItem extends StatelessWidget {
   @override
   Widget build(BuildContext context,) {
     return Container(
-      width: 115,height: 50,
+      width: 110.w,height: 50.h,
       decoration: BoxDecoration(
         color:  MyColor.grey,
         borderRadius: BorderRadius.circular(10.0),
@@ -98,8 +102,8 @@ class ListViewItem extends StatelessWidget {
         child: Row(
           children: [
             Container(
-              height: 40,
-              width: 40,
+              height: 40.h,
+              width: 40.w,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(10.0),

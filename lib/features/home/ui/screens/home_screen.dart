@@ -30,18 +30,15 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body:   Padding(
-        padding:  const EdgeInsets.all(20),
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              const HeaderAndSearchWidget(),
-              const SizedBox(height: 18,),
-              ChooseBrandWidget(),
-              const SizedBox(height: 18,),
-               const NewArrivalWidget()
-            ],
-          ),
+      body:   SingleChildScrollView(
+        child: Column(
+          children: [
+            const HeaderAndSearchWidget(),
+            const SizedBox(height: 18,),
+            ChooseBrandWidget(),
+            const SizedBox(height: 18,),
+             const NewArrivalWidget()
+          ],
         ),
       )
     );
