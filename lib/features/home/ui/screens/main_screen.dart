@@ -5,6 +5,7 @@ import 'package:laza/features/home/ui/screens/card_screen.dart';
 import 'package:laza/features/home/ui/screens/home_screen.dart';
 import 'package:laza/features/home/ui/screens/order_screen.dart';
 import 'package:laza/features/home/ui/screens/wishlist_screen.dart';
+
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
 
@@ -41,11 +42,11 @@ class _MainScreenState extends State<MainScreen> {
             tabBackgroundColor: MyColor.mainColor,
             activeColor: Colors.white,
             padding: const EdgeInsets.all(12),
-            tabs: const [
-               GButton(icon: Icons.home,text: 'home',),
-               GButton(icon: Icons.favorite,text: 'like',),
-               GButton(icon: Icons.search,text: 'search',),
-               GButton(icon: Icons.settings,text: 'setting',),
+            tabs: const[
+                GButton(icon: Icons.home,text: 'home',),
+                GButton(icon: Icons.favorite,text: 'like',),
+                GButton(icon: Icons.search,text: 'search',),
+                GButton(icon: Icons.settings,text: 'setting',),
             ],
           ),
         ),

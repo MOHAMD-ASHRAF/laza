@@ -13,5 +13,9 @@ class Assets {
   static const String imagesPuma = 'assets/images/puma.png';
   static const String imagesSearch = 'assets/images/Search.png';
   static const String imagesVoice = 'assets/images/Voice.png';
+  static const String svgVector = 'assets/svg/card_icon.svg';
+  static const String heartIcon = 'assets/svg/heart_icon.svg';
+  static const String orderIcon = 'assets/svg/order_icon.svg';
+  static const String homeIcon = 'assets/svg/home_icon.svg';
 
 }
