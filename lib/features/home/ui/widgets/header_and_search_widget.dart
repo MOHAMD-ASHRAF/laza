@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:laza/core/theming/color/my_color.dart';
+import 'package:laza/core/theming/text_style.dart';
 import 'package:laza/core/widgets/custom_text.dart';
 
 class HeaderAndSearchWidget extends StatelessWidget {
@@ -17,8 +18,8 @@ class HeaderAndSearchWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-           CustomText(text: 'Hello', fontSize: 28.sp,fontWeight: FontWeight.bold,),
-           CustomText(text: 'Welcome to laza', fontSize: 15.sp,color: Colors.grey,),
+           Text('Hello', style: TextStyles.font28BlackSemiBold,),
+           Text('Welcome to laza', style: TextStyles.font15GrayRegular,),
            SizedBox(height: 20.h,),
           Row(
             children: [

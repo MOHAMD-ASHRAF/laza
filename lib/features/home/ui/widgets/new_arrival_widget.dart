@@ -1,8 +1,9 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:laza/core/theming/color/my_color.dart';
-import 'package:laza/core/widgets/custom_text.dart';
+import 'package:laza/core/theming/text_style.dart';
 import 'package:laza/generated/assets.dart';
 
 class NewArrivalWidget extends StatelessWidget {
@@ -16,19 +17,11 @@ class NewArrivalWidget extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Column(
         children: [
-          const Row(
+           Row(
             children: [
-              CustomText(
-                text: 'New Arrival',
-                fontSize: 17,
-                fontWeight: FontWeight.bold,
-              ),
-              Spacer(),
-              CustomText(
-                text: 'View All',
-                fontSize: 13,
-                color: Colors.grey,
-              ),
+              Text('New Arrival',style:TextStyles.font17blackBold),
+              const Spacer(),
+              Text('View All',style:TextStyles.font15GrayRegular.copyWith(fontSize: 12.sp)),
             ],
           ),
           const SizedBox(
@@ -40,7 +33,7 @@ class NewArrivalWidget extends StatelessWidget {
               maxHeight: 600,
             ),
             child: GridView.builder(
-
+                physics: const BouncingScrollPhysics(),
               shrinkWrap: true,
               scrollDirection: Axis.vertical,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(

@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:laza/core/theming/color/my_color.dart';
+import 'package:laza/core/theming/text_style.dart';
 import 'package:laza/core/widgets/custom_text.dart';
 import 'package:laza/features/home/data/models/brands_model.dart';
 
@@ -46,13 +47,13 @@ class _ChooseBrandWidgetState extends State<ChooseBrandWidget> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Padding(
+         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
-          child: const Row(
+          child: Row(
             children: [
-              CustomText(text: 'Choose Brand', fontSize: 17, fontWeight: FontWeight.bold,),
-              Spacer(),
-              CustomText(text: 'View All', fontSize: 13,color: Colors.grey,),
+              Text('Choose Brand',style:TextStyles.font17blackBold),
+              const Spacer(),
+              Text('View All',style:TextStyles.font15GrayRegular.copyWith(fontSize: 12.sp)),
             ],
           ),
         ),
