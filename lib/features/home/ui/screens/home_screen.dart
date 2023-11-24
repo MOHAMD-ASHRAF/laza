@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:laza/core/theming/color/my_color.dart';
 import 'package:laza/features/home/ui/widgets/chose_brand_widget.dart';
 import 'package:laza/features/home/ui/widgets/header_and_search_widget.dart';
@@ -30,13 +31,13 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body:   SingleChildScrollView(
+      body:  SingleChildScrollView(
         child: Column(
           children: [
             const HeaderAndSearchWidget(),
-            const SizedBox(height: 18,),
-            ChooseBrandWidget(),
-            const SizedBox(height: 18,),
+            SizedBox(height: 8.h,),
+            const ChooseBrandWidget(),
+            SizedBox(height: 18.h,),
              const NewArrivalWidget()
           ],
         ),

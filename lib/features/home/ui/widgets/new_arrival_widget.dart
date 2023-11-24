@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:laza/core/theming/color/my_color.dart';
@@ -39,6 +40,7 @@ class NewArrivalWidget extends StatelessWidget {
               maxHeight: 600,
             ),
             child: GridView.builder(
+
               shrinkWrap: true,
               scrollDirection: Axis.vertical,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
