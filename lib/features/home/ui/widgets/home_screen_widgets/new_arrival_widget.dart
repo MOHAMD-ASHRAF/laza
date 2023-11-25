@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:laza/core/helpers/extesions.dart';
+import 'package:laza/core/routing/routes.dart';
 import 'package:laza/core/theming/color/my_color.dart';
 import 'package:laza/core/theming/text_style.dart';
 import 'package:laza/generated/assets.dart';
@@ -50,19 +52,24 @@ class NewArrivalWidget extends StatelessWidget {
                     Expanded(
                       child: Stack(
                         children: [
-                          Container(
-                              decoration: BoxDecoration(
-                                color: MyColor.grey,
-                                borderRadius: BorderRadius.circular(10.0),
-                              ),
-                              child: ClipRRect(
+                          GestureDetector(
+                            onTap:(){
+                              context.pushNamed(Routes.productDetailsScreen);
+                            },
+                            child: Container(
+                                decoration: BoxDecoration(
+                                  color: MyColor.grey,
                                   borderRadius: BorderRadius.circular(10.0),
-                                  child: const Image(
-                                    image:
-                                        AssetImage('assets/images/model.jpg'),
-                                    fit: BoxFit.cover,
-                                    width: double.infinity,
-                                  ))),
+                                ),
+                                child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(10.0),
+                                    child: const Image(
+                                      image:
+                                          AssetImage('assets/images/model.jpg'),
+                                      fit: BoxFit.cover,
+                                      width: double.infinity,
+                                    ))),
+                          ),
                           Positioned(
                               top: 10,
                               right: 10,

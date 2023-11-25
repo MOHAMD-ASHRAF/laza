@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:laza/features/home/ui/screens/main_screen.dart';
+import 'package:laza/core/routing/app_router.dart';
+import 'package:laza/core/routing/routes.dart';
+
 
 class LazaApp extends StatelessWidget {
-  //final AppRouter appRouter;
+  final AppRouter appRouter;
 
-  const LazaApp({super.key});
+  const LazaApp({super.key, required this.appRouter});
 
   @override
   Widget build(BuildContext context) {
@@ -14,15 +16,14 @@ class LazaApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       child: MaterialApp(
-       // onGenerateRoute: appRouter.generateRoute,
+       onGenerateRoute: appRouter.generateRoute,
         title: 'Doc App',
         theme: ThemeData(
            // primaryColor: ColorsManager.mainBlue,
             scaffoldBackgroundColor: Colors.white
         ),
         debugShowCheckedModeBanner: false,
-       // initialRoute: Routes.onBoardingScreen,
-        home: const MainScreen(),
+       initialRoute: Routes.mainScreen,
       ),
     );
   }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:laza/core/theming/color/my_color.dart';
 import 'package:laza/core/theming/text_style.dart';
+import 'package:laza/generated/assets.dart';
 
 AppBar customAppBarr({required String leadingImage,String title = ''}) {
   return AppBar(
@@ -20,7 +21,7 @@ AppBar customAppBarr({required String leadingImage,String title = ''}) {
         padding: const EdgeInsets.all(8),
         child: CircleAvatar(
           backgroundColor: MyColor.grey,
-          child: Image.asset('assets/images/Bag.png'),
+          child: Image.asset(Assets.imagesBag),
         ),
       ),
     ],
