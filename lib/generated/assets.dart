@@ -8,6 +8,7 @@ class Assets {
   static const String imagesEdit = 'assets/images/Edit.png';
   static const String imagesFila = 'assets/images/Fila.jpg';
   static const String imagesGucci = 'assets/images/gucci.jpg';
+  static const String imagesJacket = 'assets/images/jacket.png';
   static const String imagesMenu = 'assets/images/menu.png';
   static const String imagesModel = 'assets/images/model.jpg';
   static const String imagesNike = 'assets/images/nike.png';

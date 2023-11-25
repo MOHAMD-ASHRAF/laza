@@ -23,7 +23,7 @@ class CountOfItemWidgets extends StatelessWidget {
               Text('in wishList', style: TextStyles.font15GrayRegular,),
             ],
           ),
-          Spacer(),
+          const Spacer(),
           GestureDetector(
             onTap: (){
             },

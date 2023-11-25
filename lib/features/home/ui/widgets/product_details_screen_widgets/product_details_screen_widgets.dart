@@ -13,7 +13,7 @@ class ProductImageWidget extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          height: 350.h,
+          height: 315.h,
           width: double.infinity,
           color: MyColor.grey,
           child: Image.asset(

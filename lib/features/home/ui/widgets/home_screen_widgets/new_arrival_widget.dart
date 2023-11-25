@@ -65,7 +65,7 @@ class NewArrivalWidget extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(10.0),
                                     child: const Image(
                                       image:
-                                          AssetImage('assets/images/model.jpg'),
+                                          AssetImage(Assets.imagesModel),
                                       fit: BoxFit.cover,
                                       width: double.infinity,
                                     ))),
