@@ -69,7 +69,7 @@ class NewArrivalWidget extends StatelessWidget {
                               child: CircleAvatar(
                                 radius: 16,
                                   backgroundColor: MyColor.grey,
-                                  child: SvgPicture.asset(Assets.heartIcon))),
+                                  child: SvgPicture.asset(Assets.svgHeartIcon))),
                         ],
                       ),
                     ),

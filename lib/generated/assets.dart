@@ -4,6 +4,7 @@ class Assets {
 
   static const String assetsImagesAdidas = 'assets/images/adidas.jpg';
   static const String imagesAdidas = 'assets/images/adidas.jpg';
+  static const String imagesArrowLeft = 'assets/images/arrowLeft.png';
   static const String imagesBag = 'assets/images/Bag.png';
   static const String imagesFila = 'assets/images/Fila.jpg';
   static const String imagesGucci = 'assets/images/gucci.jpg';
@@ -13,9 +14,9 @@ class Assets {
   static const String imagesPuma = 'assets/images/puma.png';
   static const String imagesSearch = 'assets/images/Search.png';
   static const String imagesVoice = 'assets/images/Voice.png';
-  static const String svgVector = 'assets/svg/card_icon.svg';
-  static const String heartIcon = 'assets/svg/heart_icon.svg';
-  static const String orderIcon = 'assets/svg/order_icon.svg';
-  static const String homeIcon = 'assets/svg/home_icon.svg';
+  static const String svgCardIcon = 'assets/svg/card_icon.svg';
+  static const String svgHeartIcon = 'assets/svg/heart_icon.svg';
+  static const String svgHomeIcon = 'assets/svg/home_icon.svg';
+  static const String svgOrderIcon = 'assets/svg/order_icon.svg';
 
 }
