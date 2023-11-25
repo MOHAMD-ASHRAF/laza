@@ -9,8 +9,8 @@ class TextStyles{
       fontWeight: FontWeight.w500,
       color: Colors.black);
 
-  static TextStyle font28BlackSemiBold = TextStyle(
-      fontSize: 28.sp,
+  static TextStyle font24BlackSemiBold = TextStyle(
+      fontSize: 24.sp,
       fontWeight: FontWeight.w500,
       color: Colors.black);
 

@@ -18,7 +18,7 @@ class HeaderAndSearchWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-           Text('Hello', style: TextStyles.font28BlackSemiBold,),
+           Text('Hello', style: TextStyles.font24BlackSemiBold,),
            Text('Welcome to laza', style: TextStyles.font15GrayRegular,),
            SizedBox(height: 20.h,),
           Row(
