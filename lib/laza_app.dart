@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:laza/core/routing/app_router.dart';
 import 'package:laza/core/routing/routes.dart';
+import 'package:laza/core/theming/color/my_color.dart';
 
 
 class LazaApp extends StatelessWidget {
@@ -19,7 +20,7 @@ class LazaApp extends StatelessWidget {
        onGenerateRoute: appRouter.generateRoute,
         title: 'Doc App',
         theme: ThemeData(
-           // primaryColor: ColorsManager.mainBlue,
+            primaryColor: MyColor.mainColor,
             scaffoldBackgroundColor: Colors.white
         ),
         debugShowCheckedModeBanner: false,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:laza/core/helpers/extesions.dart';
 import '../../../../../core/theming/color/my_color.dart';
 import '../../../../../generated/assets.dart';
 
@@ -25,9 +26,14 @@ class ProductImageWidget extends StatelessWidget {
           padding: const EdgeInsets.only(left: 8, right: 8, top: 24),
           child: Row(
             children: [
-              CircleAvatar(
-                backgroundColor: Colors.white,
-                child: Image.asset(Assets.imagesArrowLeft),
+              GestureDetector(
+                onTap:(){
+                  context.pop();
+                },
+                child: CircleAvatar(
+                  backgroundColor: Colors.white,
+                  child: Image.asset(Assets.imagesArrowLeft),
+                ),
               ),
               const Spacer(),
               CircleAvatar(

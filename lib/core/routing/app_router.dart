@@ -7,7 +7,6 @@ import 'package:laza/features/home/ui/screens/product_details_screen.dart';
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
      // final arguments = settings.arguments;
-
     switch (settings.name) {
       case Routes.productDetailsScreen:
         return MaterialPageRoute(builder: (_) => const ProductDetailsScreen());

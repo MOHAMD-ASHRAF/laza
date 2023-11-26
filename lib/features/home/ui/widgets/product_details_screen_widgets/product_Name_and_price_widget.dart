@@ -18,7 +18,7 @@ class ProductNameAndPriceWidget extends StatelessWidget {
               Text('Nike Club Fleece',style: TextStyles.font24BlackSemiBold,),
             ],
           ),
-          Spacer(),
+          const Spacer(),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

@@ -41,7 +41,7 @@ class ProductsImageAndSizeWidgets extends StatelessWidget {
               child: Row(
                 children: [
                   Text('Size',style: TextStyles.font24BlackSemiBold,),
-                  Spacer(),
+                  const Spacer(),
                   Text('Size Guide',style: TextStyles.font15GrayRegular,),
                 ],
               ),
