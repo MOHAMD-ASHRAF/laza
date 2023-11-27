@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import 'package:laza/core/widgets/custom_button.dart';
 import 'package:laza/features/home/ui/widgets/product_details_screen_widgets/product_images_and_size_widgets.dart';
 import '../widgets/product_details_screen_widgets/description_reviews_price_widgets.dart';
 import '../widgets/product_details_screen_widgets/product_Name_and_price_widget.dart';
@@ -9,15 +11,16 @@ class ProductDetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
             children: [
-               ProductImageWidget(),
-               ProductNameAndPriceWidget(),
-              ProductsImageAndSizeWidgets(),
-              DescriptionReviewsPriceWidgets(),
+               const ProductImageWidget(),
+               const ProductNameAndPriceWidget(),
+              const ProductsImageAndSizeWidgets(),
+              const DescriptionReviewsPriceWidgets(),
+              CustomButton(onTap: () {  },)
             ],
           ),
         ),
@@ -25,5 +28,6 @@ class ProductDetailsScreen extends StatelessWidget {
     );
   }
 }
+
 
 
