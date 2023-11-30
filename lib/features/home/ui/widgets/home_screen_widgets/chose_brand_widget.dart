@@ -103,7 +103,7 @@ class ListViewItem extends StatelessWidget {
         child: Row(
           children: [
             Container(
-              height: 40.h,
+              height:double.infinity,
               width: 40.w,
               decoration: BoxDecoration(
                 color: Colors.white,

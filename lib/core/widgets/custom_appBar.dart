@@ -8,10 +8,13 @@ AppBar customAppBarr({required String leadingImage,String title = ''}) {
     backgroundColor: Colors.transparent,
     elevation: 0,
     leading: Padding(
-      padding: const EdgeInsets.all(8),
-      child: CircleAvatar(
-        backgroundColor: MyColor.grey,
-        child: Image.asset(leadingImage),
+      padding:  EdgeInsets.all(8),
+      child: GestureDetector(
+        onTap:(){},
+        child: CircleAvatar(
+          backgroundColor: MyColor.grey,
+          child: Image.asset(leadingImage),
+        ),
       ),
     ),
     title: Text(title,style: TextStyles.font17BlackSemiBold),
