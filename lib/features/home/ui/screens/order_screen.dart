@@ -4,6 +4,8 @@ import 'package:laza/core/widgets/custom_appBar.dart';
 import 'package:laza/features/home/ui/widgets/order_widgets/order_products_widgte.dart';
 import 'package:laza/generated/assets.dart';
 
+import '../widgets/order_widgets/adderss_and_payment_info_widget.dart';
+
 class OrderScreen extends StatelessWidget {
   const OrderScreen({super.key});
 
@@ -15,7 +17,9 @@ class OrderScreen extends StatelessWidget {
       body: const SingleChildScrollView(
         child: Column(
           children: [
-            OrderProductsWidget()
+            OrderProductsWidget(),
+            AddressAndPaymentInfoWidget()
+
           ],
         ),
       ),

@@ -9,11 +9,13 @@ class Assets {
   static const String imagesFila = 'assets/images/Fila.jpg';
   static const String imagesGucci = 'assets/images/gucci.jpg';
   static const String imagesJacket = 'assets/images/jacket.png';
+  static const String imagesLocation = 'assets/images/location.png';
   static const String imagesMenu = 'assets/images/menu.png';
   static const String imagesModel = 'assets/images/model.jpg';
   static const String imagesNike = 'assets/images/nike.png';
   static const String imagesPuma = 'assets/images/puma.png';
   static const String imagesSearch = 'assets/images/Search.png';
+  static const String imagesVisa = 'assets/images/visa.png';
   static const String imagesVoice = 'assets/images/Voice.png';
   static const String svgCardIcon = 'assets/svg/card_icon.svg';
   static const String svgHeartIcon = 'assets/svg/heart_icon.svg';
