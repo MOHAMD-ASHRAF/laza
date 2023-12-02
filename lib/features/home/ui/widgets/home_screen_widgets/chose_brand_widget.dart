@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:laza/core/theming/color/my_color.dart';
 import 'package:laza/core/theming/text_style.dart';
-import 'package:laza/core/widgets/custom_text.dart';
+
 import 'package:laza/features/home/data/models/brands_model.dart';
 
 class ChooseBrandWidget extends StatefulWidget {
@@ -112,7 +112,7 @@ class ListViewItem extends StatelessWidget {
               child: Image.asset(dummyData[index].image),
             ),
             const Spacer(),
-             CustomText(text: dummyData[index].name, fontSize: 18,color: Colors.black,fontWeight: FontWeight.bold,),
+             Text(dummyData[index].name,style: TextStyles.font17BlackSemiBold,)
           ],
         ),
       ),

@@ -20,7 +20,7 @@ class ProductDetailsScreen extends StatelessWidget {
                const ProductNameAndPriceWidget(),
               const ProductsImageAndSizeWidgets(),
               const DescriptionReviewsPriceWidgets(),
-              CustomButton(onTap: () {  },)
+              CustomButton(onTap: () {  }, text: 'Add to Cart',)
             ],
           ),
         ),

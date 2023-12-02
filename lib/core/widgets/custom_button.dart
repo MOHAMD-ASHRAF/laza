@@ -7,9 +7,10 @@ import 'package:laza/core/theming/text_style.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({
-    super.key,required this.onTap
+    super.key,required this.onTap, required this.text
   });
   final void Function() onTap;
+  final String text;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -18,9 +19,9 @@ class CustomButton extends StatelessWidget {
         onTap: onTap,
         child: Container(
           width: double.infinity,
-          height: 70.h,
+          height: 55.h,
           color: MyColor.mainColor,
-          child: Center(child: Text('Add to Cart',style: TextStyles.font17blackBold.copyWith(color: Colors.white),)),
+          child: Center(child: Text(text,style: TextStyles.font17blackBold.copyWith(color: Colors.white),)),
         ),
       ),
     );

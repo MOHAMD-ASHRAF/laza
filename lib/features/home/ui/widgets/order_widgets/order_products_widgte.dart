@@ -13,7 +13,7 @@ class OrderProductsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
       child: Container(
         width: double.infinity,
         height: 120.h,
