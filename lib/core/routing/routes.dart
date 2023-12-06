@@ -3,5 +3,7 @@ class Routes{
   static const String mainScreen = '/mainScreen';
   static const String orderScreen = '/orderScreen';
   static const String orderConfirmedScreen = '/orderConfirmedScreen';
- // static const String loginScreen = '/loginScreen';
+  static const String addressScreen = '/addressScreen';
+  static const String paymentScreen = '/paymentScreen';
+
 }
