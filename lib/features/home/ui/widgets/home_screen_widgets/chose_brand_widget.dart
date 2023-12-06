@@ -33,11 +33,11 @@ class _ChooseBrandWidgetState extends State<ChooseBrandWidget> {
       image: 'assets/images/Fila.jpg',
     ),
     BrandsModel(
-      name: 'puma',
+      name: 'Puma',
       image: 'assets/images/puma.png',
     ),
     BrandsModel(
-      name: 'gucci',
+      name: 'Gucci',
       image: 'assets/images/gucci.jpg',
     ),
   ];

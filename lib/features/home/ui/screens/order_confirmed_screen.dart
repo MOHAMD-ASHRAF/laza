@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:laza/core/helpers/extensions.dart';
 import 'package:laza/core/theming/color/my_color.dart';
 import 'package:laza/core/theming/text_style.dart';
+import '../../../../core/routing/routes.dart';
 import '../../../../generated/assets.dart';
 
 
@@ -24,24 +26,34 @@ class OrderConfirmedScreen extends StatelessWidget {
             SizedBox(height:12.h,),
             Text('Your order has been confirmed, we will send you confirmation email shortly',style: TextStyles.font15GrayRegular,),
             SizedBox(height:50.h,),
-            Container(
-              width: double.infinity,
-              height: 50.h,
-              decoration: BoxDecoration(
-                color: MyColor.grey,
-                borderRadius: BorderRadius.circular(10.0),
+            GestureDetector(
+              onTap: (){
+                context.pushNamed(Routes.orderScreen);
+              },
+              child: Container(
+                width: double.infinity,
+                height: 50.h,
+                decoration: BoxDecoration(
+                  color: MyColor.grey,
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                child: Center(child: Text('Go to order',style: TextStyles.font17BlackSemiBold,)),
               ),
-              child: Center(child: Text('Go to order',style: TextStyles.font17BlackSemiBold,)),
             ),
             SizedBox(height:28.h,),
-            Container(
-              width: double.infinity,
-              height: 50.h,
-              decoration: BoxDecoration(
-                color: MyColor.mainColor,
-                borderRadius: BorderRadius.circular(10.0),
+            GestureDetector(
+              onTap: (){
+                context.pushNamed(Routes.mainScreen);
+              },
+              child: Container(
+                width: double.infinity,
+                height: 50.h,
+                decoration: BoxDecoration(
+                  color: MyColor.mainColor,
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                child: Center(child: Text('Continue Shopping',style: TextStyles.font17BlackSemiBold.copyWith(color: Colors.white),)),
               ),
-              child: Center(child: Text('Continue Shopping',style: TextStyles.font17BlackSemiBold.copyWith(color: Colors.white),)),
             ),
           ],
         ),

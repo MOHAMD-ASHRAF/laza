@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:laza/core/helpers/extesions.dart';
+import 'package:laza/core/helpers/extensions.dart';
 import '../../../../../core/theming/color/my_color.dart';
 import '../../../../../generated/assets.dart';
 

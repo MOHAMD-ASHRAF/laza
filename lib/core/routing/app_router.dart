@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:laza/core/routing/routes.dart';
 import 'package:laza/features/home/ui/screens/main_screen.dart';
 import 'package:laza/features/home/ui/screens/order_confirmed_screen.dart';
+import 'package:laza/features/home/ui/screens/order_screen.dart';
 import 'package:laza/features/home/ui/screens/product_details_screen.dart';
 
 class AppRouter {
@@ -15,6 +16,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const MainScreen());
       case Routes.orderConfirmedScreen:
         return MaterialPageRoute(builder: (_) => const OrderConfirmedScreen());
+      case Routes.orderScreen:
+        return MaterialPageRoute(builder: (_) => const OrderScreen());
       default:
         return MaterialPageRoute(
             builder: (_) => Scaffold(
