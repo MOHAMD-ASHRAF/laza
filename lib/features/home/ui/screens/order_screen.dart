@@ -14,7 +14,7 @@ class OrderScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: customAppBarr(
+      appBar: customAppBar(
           leadingImage: Assets.imagesArrowLeft, title: 'my order'),
       body:  SingleChildScrollView(
         child: Column(

@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: customAppBarr(leadingImage: Assets.imagesMenu,title: 'Home'),
+      appBar: customAppBar(leadingImage: Assets.imagesMenu,title: 'Home'),
       body:  SingleChildScrollView(
         child: Column(
           children: [

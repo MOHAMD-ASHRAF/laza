@@ -11,7 +11,7 @@ class WishListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar: customAppBarr(leadingImage: Assets.imagesArrowLeft,title: 'WishList'),
+      appBar: customAppBar(leadingImage: Assets.imagesArrowLeft,title: 'WishList'),
       body: Column(
         children: [
           CountOfItemWidgets(),

@@ -3,7 +3,7 @@ import 'package:laza/core/theming/color/my_color.dart';
 import 'package:laza/core/theming/text_style.dart';
 import 'package:laza/generated/assets.dart';
 
-AppBar customAppBarr({required String leadingImage,String title = ''}) {
+AppBar customAppBar({required String leadingImage,String title = ''}) {
   return AppBar(
     backgroundColor: Colors.transparent,
     elevation: 0,
