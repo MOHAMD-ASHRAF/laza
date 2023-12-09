@@ -32,45 +32,47 @@ class PaymentScreen extends StatelessWidget {
     centerTitle: true,
   ),
       body: Padding(
-        padding: const EdgeInsets.all(20),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              width: 300.w,
-              height: 185.h,
-              child: Image.asset(Assets.imagesVisaCard),
-            ),
-            SizedBox(height: 18.h,),
-            Container(
-              height: 50.h,
-              width: double.infinity,
-              decoration: BoxDecoration(
-                  border:  Border.all(
-                    color:  MyColor.mainColor,
-                    width: 2
-                  ),
-                borderRadius: BorderRadius.circular(10),
+        padding: const EdgeInsets.only(top: 20,right: 20,left: 20,bottom: 0),
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                width: 300.w,
+                height: 185.h,
+                child: Image.asset(Assets.imagesVisaCard),
               ),
-              child: Center(child: Text('Add new card',style: TextStyles.font17BlackSemiBold.copyWith(color:  MyColor.mainColor)),
-            )
-            ),
-            SizedBox(height: 25.h,),
-            CustomTextFormFeild(title: 'Card Owner',),
-            SizedBox(height: 18.h,),
-            CustomTextFormFeild(title: 'Card Number',),
-            SizedBox(height: 18.h,),
-            Row(
-              children: [
-                const Expanded(child: CustomTextFormFeild(title: 'EXP',)),
-                SizedBox(width: 18.w,),
-                const Expanded(child: CustomTextFormFeild(title: 'CVV',)),
-              ],
+              SizedBox(height: 18.h,),
+              Container(
+                height: 50.h,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                    border:  Border.all(
+                      color:  MyColor.mainColor,
+                      width: 2
+                    ),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Center(child: Text('Add new card',style: TextStyles.font17BlackSemiBold.copyWith(color:  MyColor.mainColor)),
+              )
+              ),
+              SizedBox(height: 25.h,),
+              CustomTextFormFeild(title: 'Card Owner',),
+              SizedBox(height: 18.h,),
+              CustomTextFormFeild(title: 'Card Number',),
+              SizedBox(height: 18.h,),
+              Row(
+                children: [
+                  const Expanded(child: CustomTextFormFeild(title: 'EXP',)),
+                  SizedBox(width: 18.w,),
+                  const Expanded(child: CustomTextFormFeild(title: 'CVV',)),
+                ],
 
-            ),
-            SizedBox(height: 25.h,),
-            CustomButton(onTap: (){}, text: 'Save Card')
-          ],
+              ),
+              SizedBox(height: 25.h,),
+              CustomButton(onTap: (){}, text: 'Save Card')
+            ],
+          ),
         ),
       ),
     );

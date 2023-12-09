@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:laza/core/routing/app_router.dart';
-import 'package:laza/core/routing/routes.dart';
 import 'package:laza/core/theming/color/my_color.dart';
+
+import 'package:laza/features/home/ui/screens/home_screen.dart';
 
 
 class LazaApp extends StatelessWidget {
@@ -24,7 +25,8 @@ class LazaApp extends StatelessWidget {
             scaffoldBackgroundColor: Colors.white
         ),
         debugShowCheckedModeBanner: false,
-       initialRoute: Routes.mainScreen,
+      // initialRoute: Routes.mainScreen,
+        home: HomeScreen(),
       ),
     );
   }
