@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:laza/core/helpers/extensions.dart';
 import 'package:laza/core/widgets/custom_button.dart';
 import 'package:laza/generated/assets.dart';
-
 import '../../../../core/theming/color/my_color.dart';
 import '../../../../core/theming/text_style.dart';
 import '../../../../core/widgets/custom_textFormFeild.dart';
@@ -42,13 +41,14 @@ class _AddressScreenState extends State<AddressScreen> {
         padding: const EdgeInsets.all(20),
         child: SingleChildScrollView(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
             children: [
               const CustomTextFormFeild(title: 'name',),
                 SizedBox(height: 18.h,),
                 Row(
                   children: [
                     const Expanded(child: CustomTextFormFeild(title: 'Country',)),
-                    SizedBox(width: 12.w,),
+                    SizedBox(width: 18.w,),
                     const Expanded(child: CustomTextFormFeild(title: 'City',)),
                   ],
                 ),
@@ -70,6 +70,7 @@ class _AddressScreenState extends State<AddressScreen> {
                   }),
                 ],
               ),
+
               CustomButton(onTap: (){}, text: 'Save Address')
             ],
           ),

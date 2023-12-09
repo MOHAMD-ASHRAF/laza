@@ -22,10 +22,6 @@ class CustomTextFormFeild extends StatelessWidget {
               borderSide: const BorderSide(color: MyColor.mainColor, width: 1.0),
               borderRadius: BorderRadius.circular(10),
             ),
-            prefixIcon:  Icon(
-              prefixIcon,
-              color: Colors.grey,
-            ),
             enabledBorder: OutlineInputBorder(
               borderSide: const BorderSide(color: Colors.transparent, width: 0.0),
               borderRadius: BorderRadius.circular(10),
