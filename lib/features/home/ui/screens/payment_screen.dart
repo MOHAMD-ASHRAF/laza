@@ -28,7 +28,7 @@ class PaymentScreen extends StatelessWidget {
         ),
       ),
     ),
-    title: Text('PAyment',style: TextStyles.font17BlackSemiBold),
+    title: Text('Payment',style: TextStyles.font17BlackSemiBold),
     centerTitle: true,
   ),
       body: Padding(

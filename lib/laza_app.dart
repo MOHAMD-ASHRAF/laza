@@ -5,6 +5,8 @@ import 'package:laza/core/theming/color/my_color.dart';
 
 import 'package:laza/features/home/ui/screens/home_screen.dart';
 
+import 'features/home/ui/screens/main_screen.dart';
+
 
 class LazaApp extends StatelessWidget {
   final AppRouter appRouter;
@@ -26,7 +28,7 @@ class LazaApp extends StatelessWidget {
         ),
         debugShowCheckedModeBanner: false,
       // initialRoute: Routes.mainScreen,
-        home: HomeScreen(),
+        home: MainScreen(),
       ),
     );
   }

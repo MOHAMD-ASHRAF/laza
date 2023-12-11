@@ -4,6 +4,7 @@ import 'package:laza/core/theming/color/my_color.dart';
 import 'package:laza/features/home/ui/screens/card_screen.dart';
 import 'package:laza/features/home/ui/screens/home_screen.dart';
 import 'package:laza/features/home/ui/screens/order_screen.dart';
+import 'package:laza/features/home/ui/screens/payment_screen.dart';
 import 'package:laza/features/home/ui/screens/wishlist_screen.dart';
 
 class MainScreen extends StatefulWidget {
@@ -20,7 +21,7 @@ class _MainScreenState extends State<MainScreen> {
     const HomeScreen(),
     const WishListScreen(),
     const OrderScreen(),
-    const CardScreen(),
+    const PaymentScreen(),
   ];
 
   @override
@@ -46,7 +47,7 @@ class _MainScreenState extends State<MainScreen> {
                 GButton(icon: Icons.home_outlined,text: 'home',),
                 GButton(icon: Icons.favorite_border,text: 'like',),
                 GButton(icon: Icons.shopping_bag_outlined,text: 'order',),
-                GButton(icon: Icons.account_balance_wallet_outlined,text: 'wallet',),
+                GButton(icon: Icons.account_balance_wallet_outlined,text: 'card',),
             ],
           ),
         ),

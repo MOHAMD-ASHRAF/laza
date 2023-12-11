@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: SideMenu(),
+      drawer: const SideMenu(),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
