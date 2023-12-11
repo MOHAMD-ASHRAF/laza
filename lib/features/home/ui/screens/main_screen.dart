@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:laza/core/theming/color/my_color.dart';
-import 'package:laza/features/home/ui/screens/card_screen.dart';
 import 'package:laza/features/home/ui/screens/home_screen.dart';
 import 'package:laza/features/home/ui/screens/order_screen.dart';
 import 'package:laza/features/home/ui/screens/payment_screen.dart';
