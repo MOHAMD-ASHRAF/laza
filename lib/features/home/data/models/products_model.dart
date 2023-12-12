@@ -1,5 +1,22 @@
-class Product {
-  final int id;
+// class DataProductModel {
+//   final List<ProductModel> data;
+//   final int limit;
+//   final int total;
+//   final int skip;
+//   DataProductModel({required this.limit, required this.total, required this.skip, required this.data});
+//   factory DataProductModel.fromJson(Map<String, dynamic> json) {
+//     return DataProductModel(
+//       data: List<ProductModel>.from(json['data'].map((e) => ProductModel.fromJson(e))),
+//       limit: json['limit'],
+//       total: json['total'],
+//       skip: json['skip'],
+//     );
+//   }
+// }
+
+
+class ProductModel {
+  final num id;
   final String name;
   final String description;
   final num price;
@@ -10,7 +27,7 @@ class Product {
   final String image;
   final List<String> moreImage;
 
-  Product(
+  ProductModel(
       {required this.id,
       required this.name,
       required this.description,
@@ -22,8 +39,8 @@ class Product {
       required this.image,
       required this.moreImage});
 
-  factory Product.fromJson(Map<String, dynamic> json) {
-    return Product(
+  factory ProductModel.fromJson(Map<String, dynamic> json) {
+    return ProductModel(
         id: json['id'],
         name: json['title'],
         description: json['description'],

@@ -4,9 +4,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:laza/core/routing/app_router.dart';
 import 'package:laza/core/theming/color/my_color.dart';
 import 'package:laza/features/home/logic/laza_cubit.dart';
-
-
-
 import 'features/home/ui/screens/main_screen.dart';
 
 
@@ -34,7 +31,7 @@ class LazaApp extends StatelessWidget {
           ),
           debugShowCheckedModeBanner: false,
         // initialRoute: Routes.mainScreen,
-          home: MainScreen(),
+          home: const MainScreen(),
         ),
       ),
     );

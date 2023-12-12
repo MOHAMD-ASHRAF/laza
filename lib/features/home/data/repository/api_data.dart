@@ -6,10 +6,10 @@ import 'package:laza/features/home/data/models/products_model.dart';
 
 class ApiData{
 
-  Future<Product>  getDate()async{
-    Product product;
+  Future<ProductModel>  getDate()async{
+    ProductModel product;
     Response response = await Dio().get(allProducts);
-    product =Product.fromJson(response.data);
+    product =ProductModel.fromJson(response.data);
     return product;
   }
 }
