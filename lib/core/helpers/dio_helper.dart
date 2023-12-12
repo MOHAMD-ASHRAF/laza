@@ -9,7 +9,8 @@ class DioHelper {
     dio = Dio(BaseOptions(
         baseUrl: baseUrl,
         receiveDataWhenStatusError: true,
-        headers: {'Content-Type': 'application/json', 'lang': 'ar'}));
+     //   headers: {'Content-Type': 'application/json', 'lang': 'ar'}
+    ));
   }
 
   static Future<Response> getData(

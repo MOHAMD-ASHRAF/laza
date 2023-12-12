@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:laza/core/routing/app_router.dart';
 import 'package:laza/core/theming/color/my_color.dart';
+import 'package:laza/features/home/logic/laza_cubit.dart';
 
-import 'package:laza/features/home/ui/screens/home_screen.dart';
+
 
 import 'features/home/ui/screens/main_screen.dart';
 
@@ -19,16 +21,21 @@ class LazaApp extends StatelessWidget {
       designSize: const Size(375, 812),
       minTextAdapt: true,
       splitScreenMode: true,
-      child: MaterialApp(
-       onGenerateRoute: appRouter.generateRoute,
-        title: 'Doc App',
-        theme: ThemeData(
-            primaryColor: MyColor.mainColor,
-            scaffoldBackgroundColor: Colors.white
+      child: MultiBlocProvider(
+        providers: [
+            BlocProvider(create: (context) => LazaCubit()..getAllProducts()),
+        ],
+        child: MaterialApp(
+         onGenerateRoute: appRouter.generateRoute,
+          title: 'Doc App',
+          theme: ThemeData(
+              primaryColor: MyColor.mainColor,
+              scaffoldBackgroundColor: Colors.white
+          ),
+          debugShowCheckedModeBanner: false,
+        // initialRoute: Routes.mainScreen,
+          home: MainScreen(),
         ),
-        debugShowCheckedModeBanner: false,
-      // initialRoute: Routes.mainScreen,
-        home: MainScreen(),
       ),
     );
   }
