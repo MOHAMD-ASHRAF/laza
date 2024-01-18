@@ -34,6 +34,7 @@ class ProductsImageAndSizeWidgets extends StatelessWidget {
               SizedBox(width: 8.w,);
           },),
         ),
+
         Column(
           children: [
             Padding(
@@ -89,8 +90,9 @@ class ItemBuilder extends StatelessWidget {
     return Container(
       width: 80.w,height: 80.h,
       decoration: BoxDecoration(
+
         color:  MyColor.grey,
-        borderRadius: BorderRadius.circular(10.0),
+        borderRadius: BorderRadius.circular(10.0,),
       ),
       child: Container(
         height: 40.h,

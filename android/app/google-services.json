@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "989967220501",
+    "project_id": "laza-6588a",
+    "storage_bucket": "laza-6588a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989967220501:android:8a211663718c22627cf31c",
+        "android_client_info": {
+          "package_name": "com.example.laza"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD0esgnG_KyEhPKP5lQaps4Dx7hzAJz2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
