@@ -8,7 +8,6 @@ import 'package:laza/core/theming/text_style.dart';
 
 import 'package:laza/generated/assets.dart';
 
-
 class NewArrivalWidget extends StatelessWidget {
   const NewArrivalWidget({
     super.key,
@@ -57,8 +56,7 @@ class NewArrivalWidget extends StatelessWidget {
                         children: [
                           GestureDetector(
                             onTap: () {
-                              context
-                                  .pushNamed(Routes.productDetailsScreen);
+                              context.pushNamed(Routes.productDetailsScreen);
                             },
                             child: Container(
                                 decoration: BoxDecoration(
@@ -66,8 +64,7 @@ class NewArrivalWidget extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(10.0),
                                 ),
                                 child: ClipRRect(
-                                    borderRadius:
-                                        BorderRadius.circular(10.0),
+                                    borderRadius: BorderRadius.circular(10.0),
                                     child: const Image(
                                       image: AssetImage(Assets.imagesModel),
                                       fit: BoxFit.cover,
@@ -80,8 +77,8 @@ class NewArrivalWidget extends StatelessWidget {
                               child: CircleAvatar(
                                   radius: 16,
                                   backgroundColor: MyColor.grey,
-                                  child: SvgPicture.asset(
-                                      Assets.svgHeartIcon))),
+                                  child:
+                                      SvgPicture.asset(Assets.svgHeartIcon))),
                         ],
                       ),
                     ),
