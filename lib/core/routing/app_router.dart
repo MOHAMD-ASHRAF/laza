@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:laza/core/routing/routes.dart';
+import 'package:laza/features/auth/ui/screens/create_account_screen.dart';
 import 'package:laza/features/home/ui/screens/address_screen.dart';
 import 'package:laza/features/home/ui/screens/main_screen.dart';
 import 'package:laza/features/home/ui/screens/order_confirmed_screen.dart';
@@ -24,6 +25,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const AddressScreen());
       case Routes.paymentScreen:
         return MaterialPageRoute(builder: (_) => const PaymentScreen());
+      case Routes.createAccountScreen:
+        return MaterialPageRoute(builder: (_) => const CreateAccountScreen());
       default:
         return MaterialPageRoute(
             builder: (_) => Scaffold(
