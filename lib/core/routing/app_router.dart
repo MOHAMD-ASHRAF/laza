@@ -1,13 +1,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:laza/core/routing/routes.dart';
-import 'package:laza/features/auth/ui/screens/create_account_screen.dart';
-import 'package:laza/features/home/ui/screens/address_screen.dart';
-import 'package:laza/features/home/ui/screens/main_screen.dart';
-import 'package:laza/features/home/ui/screens/order_confirmed_screen.dart';
-import 'package:laza/features/home/ui/screens/order_screen.dart';
-import 'package:laza/features/home/ui/screens/payment_screen.dart';
-import 'package:laza/features/home/ui/screens/product_details_screen.dart';
+import 'package:laza/features/auth/view/screens/create_account_screen.dart';
+import 'package:laza/features/home/view/screens/address_screen.dart';
+import 'package:laza/features/home/view/screens/main_screen.dart';
+import 'package:laza/features/home/view/screens/order_confirmed_screen.dart';
+import 'package:laza/features/home/view/screens/order_screen.dart';
+import 'package:laza/features/home/view/screens/payment_screen.dart';
+import 'package:laza/features/home/view/screens/product_details_screen.dart';
 
 class AppRouter {
   Route generateRoute(RouteSettings settings) {

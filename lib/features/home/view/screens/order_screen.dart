@@ -3,8 +3,9 @@ import 'package:laza/core/helpers/extensions.dart';
 import 'package:laza/core/routing/routes.dart';
 import 'package:laza/core/widgets/custom_appBar.dart';
 import 'package:laza/core/widgets/custom_button.dart';
-import 'package:laza/features/home/ui/widgets/order_widgets/order_information_widget.dart';
-import 'package:laza/features/home/ui/widgets/order_widgets/order_products_widget.dart';
+import 'package:laza/features/home/view/widgets/order_widgets/order_information_widget.dart';
+import 'package:laza/features/home/view/widgets/order_widgets/order_products_widget.dart';
+
 import 'package:laza/generated/assets.dart';
 import '../widgets/order_widgets/address_and_payment_info_widget.dart';
 

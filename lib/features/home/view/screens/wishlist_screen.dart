@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:laza/core/theming/color/my_color.dart';
 import 'package:laza/core/widgets/custom_appBar.dart';
-import 'package:laza/features/home/ui/widgets/wishlist_screen_widgets/count_of_item_widgets.dart';
+import 'package:laza/features/home/view/widgets/wishlist_screen_widgets/count_of_item_widgets.dart';
 import 'package:laza/generated/assets.dart';
 
 class WishListScreen extends StatelessWidget {

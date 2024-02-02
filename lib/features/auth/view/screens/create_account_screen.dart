@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:laza/core/theming/color/my_color.dart';
 import 'package:laza/core/theming/text_style.dart';
 import 'package:laza/core/widgets/custom_button.dart';
-import 'package:laza/features/auth/ui/widgets/login_with_platform_widget.dart';
+import 'package:laza/features/auth/auth_view_model/auth_controller.dart';
+import 'package:laza/features/auth/view/widgets/login_with_platform_widget.dart';
+import 'package:laza/features/home/view/screens/home_screen.dart';
 
-class CreateAccountScreen extends StatelessWidget {
+class CreateAccountScreen extends GetView<AuthController> {
   const CreateAccountScreen({super.key});
 
   @override
@@ -37,7 +40,7 @@ class CreateAccountScreen extends StatelessWidget {
           ),
            LoginWithPlatFormWidget(
             onTap: (){
-
+            controller.signInWithGoogle();
             },
             image: 'assets/images/google.png',
             text: 'Google',

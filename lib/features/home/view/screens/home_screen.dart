@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:laza/core/helpers/extensions.dart';
-import 'package:laza/features/home/ui/widgets/home_screen_widgets/chose_brand_widget.dart';
-import 'package:laza/features/home/ui/widgets/home_screen_widgets/header_and_search_widget.dart';
-import 'package:laza/features/home/ui/widgets/home_screen_widgets/new_arrival_widget.dart';
+import 'package:laza/features/home/view/widgets/home_screen_widgets/chose_brand_widget.dart';
+import 'package:laza/features/home/view/widgets/home_screen_widgets/header_and_search_widget.dart';
+import 'package:laza/features/home/view/widgets/home_screen_widgets/new_arrival_widget.dart';
 import 'package:laza/generated/assets.dart';
 
 import '../../../../core/theming/color/my_color.dart';

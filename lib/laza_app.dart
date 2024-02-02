@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:laza/core/routing/app_router.dart';
 import 'package:laza/core/theming/color/my_color.dart';
-import 'package:laza/features/auth/ui/screens/create_account_screen.dart';
-import 'features/home/ui/screens/main_screen.dart';
+import 'package:laza/features/auth/binding/auth_binding.dart';
+import 'package:laza/features/auth/view/screens/create_account_screen.dart';
 import 'package:get/get.dart';
 
 
@@ -19,6 +19,7 @@ class LazaApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       child: GetMaterialApp(
+        initialBinding: AuthBinding(),
        onGenerateRoute: appRouter.generateRoute,
         title: 'Doc App',
         theme: ThemeData(
