@@ -4,9 +4,10 @@ import 'package:get/get.dart';
 import 'package:laza/core/theming/color/my_color.dart';
 import 'package:laza/core/theming/text_style.dart';
 import 'package:laza/core/widgets/custom_button.dart';
-import 'package:laza/features/auth/auth_view_model/auth_controller.dart';
+import 'package:laza/features/auth/auth_controller/auth_controller.dart';
+
 import 'package:laza/features/auth/view/widgets/login_with_platform_widget.dart';
-import 'package:laza/features/home/view/screens/home_screen.dart';
+
 
 class CreateAccountScreen extends GetView<AuthController> {
   const CreateAccountScreen({super.key});
