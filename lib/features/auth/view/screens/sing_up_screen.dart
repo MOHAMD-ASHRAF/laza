@@ -26,15 +26,7 @@ class SingUpScreen extends StatelessWidget {
             SizedBox(
               height: 100.h,
             ),
-            const SingUpWidget(),
-            SizedBox(
-              height: 50.h,
-            ),
-          CustomButton(
-            width: 150.w,
-              onTap: () {},
-              text: 'Sing Up',
-            )
+             SingUpWidget(),
           ],
         ),
       ),
