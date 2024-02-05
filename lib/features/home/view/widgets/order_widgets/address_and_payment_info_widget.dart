@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:laza/core/helpers/extensions.dart';
+import 'package:get/get.dart';
 import 'package:laza/core/theming/color/my_color.dart';
 import 'package:laza/core/theming/text_style.dart';
+import 'package:laza/routes/app_pages.dart';
 
-import '../../../../../core/routing/routes.dart';
 import '../../../../../generated/assets.dart';
 
 class AddressAndPaymentInfoWidget extends StatelessWidget {
@@ -22,7 +22,7 @@ class AddressAndPaymentInfoWidget extends StatelessWidget {
             title: 'Egypt, Cairo',
             subTitle: 'madinty',
             onTap: () {
-              context.pushNamed(Routes.addressScreen);
+              Get.toNamed(Routes.ADDRESSSCREEN);
             },
           ),
           SizedBox(
@@ -34,7 +34,7 @@ class AddressAndPaymentInfoWidget extends StatelessWidget {
             title: 'Visa Classic',
             subTitle: '**** 7690',
             onTap: () {
-              context.pushNamed(Routes.paymentScreen);
+              Get.toNamed(Routes.PAYMENTSCREEN);
             },
           ),
         ],

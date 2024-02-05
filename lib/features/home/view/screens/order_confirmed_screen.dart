@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:laza/core/helpers/extensions.dart';
+import 'package:get/get.dart';
+
 import 'package:laza/core/theming/color/my_color.dart';
 import 'package:laza/core/theming/text_style.dart';
-import '../../../../core/routing/routes.dart';
+import 'package:laza/routes/app_pages.dart';
+
 import '../../../../generated/assets.dart';
 
 
@@ -28,7 +30,7 @@ class OrderConfirmedScreen extends StatelessWidget {
             SizedBox(height:50.h,),
             GestureDetector(
               onTap: (){
-                context.pushNamed(Routes.orderScreen);
+                Get.toNamed(Routes.ORDERSCREEN);
               },
               child: Container(
                 width: double.infinity,
@@ -43,7 +45,7 @@ class OrderConfirmedScreen extends StatelessWidget {
             SizedBox(height:28.h,),
             GestureDetector(
               onTap: (){
-                context.pushNamed(Routes.mainScreen);
+                Get.toNamed(Routes.MAINSCREEN);
               },
               child: Container(
                 width: double.infinity,

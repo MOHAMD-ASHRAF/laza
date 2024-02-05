@@ -7,11 +7,12 @@ import 'package:laza/core/theming/text_style.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({
-    super.key,required this.onTap, required this.text,  this.width = double.infinity
+    super.key,required this.onTap, required this.text,  this.width = double.infinity,  this.borderRadius = 0,
   });
   final void Function() onTap;
   final String text;
   final double width;
+  final double borderRadius;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -24,7 +25,7 @@ class CustomButton extends StatelessWidget {
 
           decoration: BoxDecoration(
             color: MyColor.mainColor,
-            borderRadius: BorderRadius.circular(25),
+            borderRadius: BorderRadius.circular(borderRadius),
           ),
           child: Center(child: Text(text,style: TextStyles.font17blackBold.copyWith(color: Colors.white),)),
         ),

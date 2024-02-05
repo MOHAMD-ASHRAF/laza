@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:laza/core/helpers/extensions.dart';
-import 'package:laza/core/routing/routes.dart';
+import 'package:get/get.dart';
 import 'package:laza/core/theming/color/my_color.dart';
 import 'package:laza/core/theming/text_style.dart';
 
 import 'package:laza/generated/assets.dart';
+
+import '../../../../../routes/app_pages.dart';
 
 class NewArrivalWidget extends StatelessWidget {
   const NewArrivalWidget({
@@ -56,7 +57,7 @@ class NewArrivalWidget extends StatelessWidget {
                         children: [
                           GestureDetector(
                             onTap: () {
-                              context.pushNamed(Routes.productDetailsScreen);
+                              Get.toNamed(Routes.PRODUCTDETAILSSCREEN);
                             },
                             child: Container(
                                 decoration: BoxDecoration(

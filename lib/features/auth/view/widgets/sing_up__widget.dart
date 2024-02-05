@@ -5,6 +5,7 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:laza/core/widgets/custom_button.dart';
 import 'package:laza/core/widgets/custom_textFormFeild.dart';
 import 'package:laza/features/auth/auth_controller/auth_controller.dart';
+import 'package:laza/routes/app_pages.dart';
 
 class SingUpWidget extends StatelessWidget {
    SingUpWidget({super.key});
@@ -36,9 +37,10 @@ class SingUpWidget extends StatelessWidget {
             width: 150.w,
             text: 'Sing Up',
             onTap: () {
-              if(_formKey.currentState!.validate()){
-                controller.registerUser(controller.email.text.trim(), controller.password.text.trim());
-              }
+              Get.toNamed(Routes.MAINSCREEN);
+              // if(_formKey.currentState!.validate()){
+              //   controller.registerUser(controller.email.text.trim(), controller.password.text.trim());
+              // }
             },
           ),
         ],
