@@ -9,7 +9,7 @@ import '../../../../../generated/assets.dart';
 
 class AddressAndPaymentInfoWidget extends StatelessWidget {
   const AddressAndPaymentInfoWidget({super.key});
-
+ 
   @override
   Widget build(BuildContext context) {
     return Padding(
