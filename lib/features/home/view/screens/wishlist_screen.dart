@@ -14,7 +14,7 @@ class WishListScreen extends StatelessWidget {
       appBar: customAppBar(leadingImage: Assets.imagesArrowLeft,title: 'WishList'),
       body: Column(
         children: [
-          CountOfItemWidgets(),
+          const CountOfItemWidgets(),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: ConstrainedBox(

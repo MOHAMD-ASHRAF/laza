@@ -57,9 +57,9 @@ class PaymentScreen extends StatelessWidget {
               )
               ),
               SizedBox(height: 25.h,),
-              CustomTextFormFeild(title: 'Card Owner',),
+              const CustomTextFormFeild(title: 'Card Owner',),
               SizedBox(height: 18.h,),
-              CustomTextFormFeild(title: 'Card Number',),
+              const CustomTextFormFeild(title: 'Card Number',),
               SizedBox(height: 18.h,),
               Row(
                 children: [
