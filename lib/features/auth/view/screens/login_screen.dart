@@ -9,9 +9,27 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('hi'),
         backgroundColor: Colors.white,
         elevation: 0.0,
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              'Welcome',
+              style: TextStyles.font24BlackSemiBold,
+            ),
+            Text(
+              'Please enter your data to continue',
+              style: TextStyles.font15GrayRegular,
+            ),
+            SizedBox(
+              height: 100.h,
+            ),
+          ],
+        ),
       ),
     );
   }
