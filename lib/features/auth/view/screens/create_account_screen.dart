@@ -1,3 +1,4 @@
+
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -6,7 +7,6 @@ import 'package:laza/core/theming/color/my_color.dart';
 import 'package:laza/core/theming/text_style.dart';
 import 'package:laza/core/widgets/custom_button.dart';
 import 'package:laza/features/auth/auth_controller/auth_controller.dart';
-
 import 'package:laza/features/auth/view/widgets/login_with_platform_widget.dart';
 import 'package:laza/routes/app_pages.dart';
 
@@ -68,9 +68,8 @@ class CreateAccountScreen extends GetView<AuthController> {
                     style: TextStyles.font15GrayRegular),
                 TextSpan(
                     text: ' Sign Up',
-                    style: TextStyles.font15GrayRegular
-                        .copyWith(color: Colors.black),
-                  recognizer: TapGestureRecognizer()..onTap = () => Get.toNamed(Routes.SINGUPSCREEN),
+                    style: TextStyles.font15GrayRegular.copyWith(color: Colors.black),
+                  recognizer: TapGestureRecognizer()..onTap = () => Get.toNamed(Routes.LOGINSCREEN),
                 ),
               ],
             ),
@@ -79,7 +78,7 @@ class CreateAccountScreen extends GetView<AuthController> {
             height: 16.h,
           ),
           CustomButton(
-            onTap: () {},
+            onTap: () => Get.toNamed(Routes.SINGUPSCREEN),
             text: 'Create an Account',
           )
         ],

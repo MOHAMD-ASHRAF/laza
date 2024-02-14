@@ -9,6 +9,7 @@ abstract class Routes {
   static const String PAYMENTSCREEN = '/paymentScreen';
   static const String CREATEACCOUNTSCREEN = '/createAccountScreen';
   static const String SINGUPSCREEN = '/singUpScreen';
+  static const String LOGINSCREEN = '/loginScreen';
 
   static String LOGIN_THEN(String afterSuccessfulLogin) =>
       '$SINGUPSCREEN?then=${Uri.encodeQueryComponent(afterSuccessfulLogin)}';

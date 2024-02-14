@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 import 'package:laza/features/auth/binding/auth_binding.dart';
 import 'package:laza/features/auth/view/screens/create_account_screen.dart';
+import 'package:laza/features/auth/view/screens/login_screen.dart';
 import 'package:laza/features/auth/view/screens/sing_up_screen.dart';
 import 'package:laza/features/home/view/screens/address_screen.dart';
 import 'package:laza/features/home/view/screens/main_screen.dart';
@@ -52,6 +53,10 @@ class AppPages {
     GetPage(
       name: Routes.PRODUCTDETAILSSCREEN,
       page: () => const ProductDetailsScreen(),
+    ),
+    GetPage(
+      name: Routes.LOGINSCREEN,
+      page: () => const LoginScreen(),
     ),
   ];
 }
