@@ -21,6 +21,7 @@ class TextStyles{
 
   static TextStyle font15WhiteRegular = TextStyle(
       fontSize: 15.sp,
+
       fontWeight: FontWeight.normal,
       color: Colors.white);
 
