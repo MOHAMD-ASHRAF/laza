@@ -35,6 +35,7 @@ class SingUpWidget extends StatelessWidget {
           ),
           CustomButton(
             width: 150.w,
+            borderRadius: 25,
             text: 'Sing Up',
             onTap: () {
               Get.toNamed(Routes.MAINSCREEN);

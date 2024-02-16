@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:laza/core/theming/text_style.dart';
-import 'package:laza/features/auth/view/widgets/sing_up__widget.dart';
+import 'package:laza/features/auth/view/widgets/sing_up_widget.dart';
 
 class SingUpScreen extends StatelessWidget {
   const SingUpScreen({super.key});

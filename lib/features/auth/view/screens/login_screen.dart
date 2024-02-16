@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:laza/core/theming/text_style.dart';
+import 'package:laza/core/widgets/custom_button.dart';
+import 'package:laza/core/widgets/custom_textFormFeild.dart';
+import 'package:laza/features/auth/view/widgets/login_widget.dart';
+import 'package:laza/routes/app_pages.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -28,6 +33,7 @@ class LoginScreen extends StatelessWidget {
             SizedBox(
               height: 100.h,
             ),
+            LoginWidget()
           ],
         ),
       ),
