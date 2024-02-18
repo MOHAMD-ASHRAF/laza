@@ -21,7 +21,7 @@ class LazaApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       child: GetMaterialApp(
-        initialBinding: AuthBinding(),
+       // initialBinding: AuthBinding(),
         enableLog: true,
         getPages: AppPages.routes,
         initialRoute: Routes.CREATEACCOUNTSCREEN,
