@@ -1,17 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import 'package:laza/core/theming/color/my_color.dart';
-import 'package:laza/features/auth/binding/auth_binding.dart';
 import 'package:get/get.dart';
 import 'package:laza/features/auth/view/screens/create_account_screen.dart';
-
 import 'routes/app_pages.dart';
 
 
 class LazaApp extends StatelessWidget {
-
-
   const LazaApp({super.key});
 
   @override

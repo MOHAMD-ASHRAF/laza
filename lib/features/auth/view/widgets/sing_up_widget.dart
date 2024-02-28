@@ -38,10 +38,9 @@ class SingUpWidget extends StatelessWidget {
             borderRadius: 25,
             text: 'Sing Up',
             onTap: () {
-              Get.toNamed(Routes.MAINSCREEN);
-              // if(_formKey.currentState!.validate()){
-              //   controller.registerUser(controller.email.text.trim(), controller.password.text.trim());
-              // }
+              if(_formKey.currentState!.validate()){
+                controller.registerUser(controller.email.text.trim(), controller.password.text.trim());
+              }
             },
           ),
         ],

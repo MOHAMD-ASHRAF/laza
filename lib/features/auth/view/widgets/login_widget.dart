@@ -3,9 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:laza/core/theming/text_style.dart';
 import 'package:laza/core/widgets/custom_button.dart';
+import 'package:laza/core/widgets/custom_snackbar.dart';
 import 'package:laza/core/widgets/custom_textFormFeild.dart';
 import 'package:laza/features/auth/auth_controller/auth_controller.dart';
-import 'package:laza/routes/app_pages.dart';
 
 class LoginWidget extends StatelessWidget {
    LoginWidget({super.key});
@@ -18,11 +18,13 @@ class LoginWidget extends StatelessWidget {
       key: _formKey,
       child: Column(
         children: [
-          const CustomTextFormFeild(
-            title: 'Username',
+           CustomTextFormFeild(
+            title: 'user email',
+            controller: controller.emailUserLogin,
           ),
-          const CustomTextFormFeild(
+           CustomTextFormFeild(
             title: 'password',
+            controller: controller.passwordUserLogin,
           ),
           SizedBox(
             height: 100.h,
@@ -42,10 +44,10 @@ class LoginWidget extends StatelessWidget {
             width: 150.w,
             text: 'Login',
             onTap: () {
-              Get.toNamed(Routes.MAINSCREEN);
-              // if(_formKey.currentState!.validate()){
-              //   controller.registerUser(controller.email.text.trim(), controller.password.text.trim());
-              // }
+              if(_formKey.currentState!.validate()){
+                controller.loginUser(controller.emailUserLogin.text.trim(), controller.passwordUserLogin.text.trim());
+                customSnackBar('login successful',Colors.green);
+              }
             },
           ),
         ],

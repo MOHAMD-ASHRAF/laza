@@ -30,4 +30,11 @@ class TextStyles{
       fontWeight: FontWeight.bold,
       color: Colors.black);
 
+  static const TextStyle textMedium = TextStyle(
+      fontSize: 16,
+      color: Colors.black,
+      fontWeight: FontWeight.w400,
+      height: 1.5,
+      fontFamily: "MULI");
+
 }
