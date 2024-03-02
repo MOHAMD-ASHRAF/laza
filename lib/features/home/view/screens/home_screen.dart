@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:laza/core/helpers/extensions.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+
+import 'package:laza/features/auth/auth_controller/auth_controller.dart';
 import 'package:laza/features/home/view/widgets/home_screen_widgets/chose_brand_widget.dart';
 import 'package:laza/features/home/view/widgets/home_screen_widgets/header_and_search_widget.dart';
 import 'package:laza/features/home/view/widgets/home_screen_widgets/new_arrival_widget.dart';
@@ -12,8 +15,9 @@ import '../../../../core/widgets/menu_widget/side_menu.dart';
 
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+   HomeScreen({super.key});
 
+  final controller  = Get.put(AuthController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,11 +44,11 @@ class HomeScreen extends StatelessWidget {
             padding:  const EdgeInsets.all(8),
             child: GestureDetector(
               onTap:(){
-                context.pop();
+                controller.signOut();
               },
               child: CircleAvatar(
                 backgroundColor: MyColor.grey,
-                child: Image.asset(Assets.imagesBag),
+                child: Icon(Icons.login_outlined),
               ),
             ),
           ),

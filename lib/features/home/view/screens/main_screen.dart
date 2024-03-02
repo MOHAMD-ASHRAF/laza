@@ -18,7 +18,7 @@ class _MainScreenState extends State<MainScreen> {
 
   int currentTap = 0;
   final List<Widget> screens = [
-    const HomeScreen(),
+     HomeScreen(),
     const WishListScreen(),
     const OrderScreen(),
     const PaymentScreen(),

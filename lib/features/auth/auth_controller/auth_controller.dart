@@ -58,6 +58,16 @@ class AuthController extends GetxController {
     );
     return await FirebaseAuth.instance.signInWithCredential(credential);
   }
+
+  Future<void> signOut() async {
+    try{
+      await FirebaseAuth.instance.signOut();
+      Get.offAllNamed(Routes.LOGINSCREEN);
+    }catch(e){
+      print('something error');
+    }
+  }
+
   @override
   void onInit() {
     // TODO: implement onInit
