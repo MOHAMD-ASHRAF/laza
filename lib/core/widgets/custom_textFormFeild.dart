@@ -4,11 +4,12 @@ import 'package:laza/core/theming/color/my_color.dart';
 import 'package:laza/core/theming/text_style.dart';
 
 class CustomTextFormFeild extends StatelessWidget {
-  const CustomTextFormFeild({super.key,this.title = '',  this.hintTitle = '', this.prefixIcon, this.controller});
+  const CustomTextFormFeild({super.key,this.title = '',  this.hintTitle = '', this.prefixIcon, this.controller, this.validator});
   final String title;
   final String hintTitle;
   final IconData? prefixIcon;
   final TextEditingController? controller;
+  final String? Function(String?)? validator;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -20,6 +21,7 @@ class CustomTextFormFeild extends StatelessWidget {
           SizedBox(height: 8),
           TextFormField(
             controller: controller,
+            validator: validator,
             decoration: InputDecoration(
               focusedBorder: OutlineInputBorder(
                 borderSide: const BorderSide(color: MyColor.mainColor, width: 1.0),

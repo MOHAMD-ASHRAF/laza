@@ -21,14 +21,17 @@ class SingUpWidget extends StatelessWidget {
           CustomTextFormFeild(
             controller: controller.name,
             title: 'UserName',
+            validator: (value) => value!.isEmpty ? 'UserName cannot be blank':null,
           ),
           CustomTextFormFeild(
             controller: controller.email,
             title: 'Email Address',
+            validator: (value) => value!.isEmpty ? 'Email cannot be blank':null,
           ),
           CustomTextFormFeild(
             controller: controller.password,
             title: 'password',
+            validator: (value) => value!.isEmpty ? 'password cannot be blank':null,
           ),
           SizedBox(
             height: 50.h,

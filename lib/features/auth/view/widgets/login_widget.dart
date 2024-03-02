@@ -21,10 +21,12 @@ class LoginWidget extends StatelessWidget {
            CustomTextFormFeild(
             title: 'user email',
             controller: controller.emailUserLogin,
+             validator: (value) => value!.isEmpty ? 'Email cannot be blank':null,
           ),
            CustomTextFormFeild(
             title: 'password',
             controller: controller.passwordUserLogin,
+             validator: (value) => value!.isEmpty ? 'password cannot be blank':null,
           ),
           SizedBox(
             height: 100.h,
