@@ -46,7 +46,7 @@ class HomeScreen extends StatelessWidget {
               onTap:(){
                 controller.signOut();
               },
-              child: CircleAvatar(
+              child: const CircleAvatar(
                 backgroundColor: MyColor.grey,
                 child: Icon(Icons.login_outlined),
               ),

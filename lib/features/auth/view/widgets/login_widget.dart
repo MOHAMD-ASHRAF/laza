@@ -48,7 +48,6 @@ class LoginWidget extends StatelessWidget {
             onTap: () {
               if(_formKey.currentState!.validate()){
                 controller.loginUser(controller.emailUserLogin.text.trim(), controller.passwordUserLogin.text.trim());
-                customSnackBar('login successful',Colors.green);
               }
             },
           ),

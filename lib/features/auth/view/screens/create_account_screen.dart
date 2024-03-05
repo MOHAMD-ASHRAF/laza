@@ -10,6 +10,8 @@ import 'package:laza/features/auth/auth_controller/auth_controller.dart';
 import 'package:laza/features/auth/view/widgets/login_with_platform_widget.dart';
 import 'package:laza/routes/app_pages.dart';
 
+import '../../../../core/widgets/custom_snackbar.dart';
+
 
 class CreateAccountScreen extends GetView<AuthController> {
   const CreateAccountScreen({super.key});
@@ -33,7 +35,10 @@ class CreateAccountScreen extends GetView<AuthController> {
           SizedBox(
             height: 200.h,
           ),
-          const LoginWithPlatFormWidget(
+           LoginWithPlatFormWidget(
+            onTap: (){
+              customSnackBar('dfd',Colors.cyan);
+            },
             image: 'assets/images/facebook.png',
             text: 'FaceBook',
             color: MyColor.blue,
