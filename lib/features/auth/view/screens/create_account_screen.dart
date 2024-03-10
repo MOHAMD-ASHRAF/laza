@@ -35,7 +35,7 @@ class CreateAccountScreen extends GetView<AuthController> {
           SizedBox(
             height: 200.h,
           ),
-           LoginWithPlatFormWidget(
+          LoginWithPlatFormWidget(
             onTap: (){
               customSnackBar('dfd',Colors.cyan);
             },
@@ -46,7 +46,7 @@ class CreateAccountScreen extends GetView<AuthController> {
           SizedBox(
             height: 16.h,
           ),
-           LoginWithPlatFormWidget(
+          LoginWithPlatFormWidget(
             onTap: (){
             controller.signInWithGoogle();
             },

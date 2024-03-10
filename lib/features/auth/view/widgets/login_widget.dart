@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:laza/core/theming/text_style.dart';
 import 'package:laza/core/widgets/custom_button.dart';
-import 'package:laza/core/widgets/custom_snackbar.dart';
 import 'package:laza/core/widgets/custom_textFormFeild.dart';
 import 'package:laza/features/auth/auth_controller/auth_controller.dart';
 
